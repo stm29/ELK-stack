@@ -3,4 +3,6 @@ path.logs: /var/log/elasticsearch
 network.host: 0.0.0.0  #accessing it from public IP
 http.port: 9200
 discovery.type: single-node   #this must be enabled to access it from public IP
-xpack.security.enabled: true    #this must be enabled to set password log in for elastic search, logstash & kibana
+#xpack.security.enabled: true    this must be enabled to set password log in for elastic search, logstash & kibana
+xpack.monitoring.collection.enabled: true
+xpack.monitoring.elasticsearch.collection.enabled: true
